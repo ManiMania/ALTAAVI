@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+	height: 95px;
+}
+.elementor-video-parent {
+	display: grid;	
+	grid-gap: 15px;
+	justify-content: center;
+}
+.elementor-video {
+	height: 291.038px;
+	width: 283.837px;
+	text-align: center;
+	border: none;
+	padding-left: 77px;
+}
+
+.civileng-video {
+	height: 209.038px;
+	width: 489.612px;
+	text-align: center;
+	border: none;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.body-element {
+	background-color: #2D2D2D;
+	color: #FFFFFF;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+	min-height: 84vh;
+	
+}
+
+.left-content {
+    width: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.scrollable-text {
+    height: 500px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.right-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-images img {
+    width: 100%;
+    height: 45%;  /* Adjust height as needed */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+ .image-container {
+            display: grid;
+            grid-template-columns: repeat(4, 364px); /* 4 images per row */
+            grid-gap: 5px;                          /* Space between images */
+            justify-content: center;                 /* Center the grid */
+            padding: 5px;                           /* Padding around the container */
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 364px;
+            height: 459px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+        }
+
+        .image-wrapper .image-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);    /* Semi-transparent background */
+            color: white;                      /* Text color */
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;                        /* Initially hidden */
+            transition: opacity 0.3s ease;     /* Smooth fade-in */
+        }
+
+        .image-wrapper:hover {
+            box-shadow: rgba(0, 0, 0, 0.5); /* Shadow on hover */
+        }
+
+        .image-wrapper:hover .image-name {
+            opacity: 1; /* Show name on hover */
+        }
+
+/* Scrollbar customization for Webkit browsers (Chrome, Edge, Safari) */
+.scrollable-text::-webkit-scrollbar {
+    width: 8px;  /* Thin scrollbar */
+}
+
+.scrollable-text::-webkit-scrollbar-track {
+    background-color: none;  /* Green background */
+    border-radius: 10px;  /* Rounded corners for the track */
+}
+
+
+ /* Style the scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;             /* Thin scrollbar width */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;    /* Track background color */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #7A8800;  /* Scrollbar color */
+            border-radius: 1px;       /* Rounded corners */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+             background-color: #7A8800;  /* Color on hover */
+        }
+
+        /* Hide scrollbar arrows */
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+		.contact-page {
+			padding: 50px 50px 50px 50px;
+		}
+		
+		.address-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .address-box {
+            width: 40%; /* Two addresses per row with some gap */
+            margin-bottom: 30px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        .address-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .location-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .contact-info {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
