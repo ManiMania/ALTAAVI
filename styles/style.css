@@ -59,6 +59,12 @@ nav ul li a {
 .body-element {
 	background-color: #2D2D2D;
 	color: #FFFFFF;
+	min-height: 100vh;
+	min-height: 84vh;
+	line-height: 25px;
+	padding-left: 100px;
+	padding-right:100px;
+	
 }
 
 .content-container {
@@ -66,7 +72,6 @@ nav ul li a {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-	min-height: 84vh;
 	
 }
 
