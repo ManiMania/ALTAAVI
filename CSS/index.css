@@ -169,24 +169,50 @@ main {
 }
 
 .pimg {
+    display: grid; 
     background-color: #585857;
     padding-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, auto); 
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    width: 100%;
     justify-content: center; 
     align-content: center; 
 }
 
 .pimg img {
-    width: 35rem; 
+    width: 100%; 
     object-fit: contain;
     height: 35rem; 
     object-fit: cover;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .pimg img:hover {
-    filter: grayscale(100%) contrast(1.2) brightness(0.8);
+    filter: contrast(1.1) brightness(1.2);  /* Slightly lighter image with more contrast */
+}
+
+.image-container {
+    position: relative;  /* Ensures the text is positioned relative to the image */
+}
+
+.image-container:hover .image-name {
+    opacity: 1;  /* Make the text visible on hover */
+}
+
+.image-name {
+    position: absolute;  /* Position the text over the image */
+    bottom: 0;  /* Align the text to the bottom of the container */
+    left: 0;  /* Align the text to the left of the container */
+    width: 100%;  /* Ensure the text spans the entire width of the image */
+    background-color: rgba(255, 255, 255, 0.6);  /* Light transparent white overlay */
+    color: #333;  /* Dark text color to ensure readability */
+    padding: 5px;  /* Padding around the text */
+    font-size: 16px;  /* Font size of the text */
+    text-align: center;  /* Center the text horizontally */
+    opacity: 0;  /* Initially hide the text */
+    transition: opacity 0.3s ease;  /* Smooth transition when showing the text */
 }
 
 .info4 {
@@ -399,4 +425,16 @@ main {
     bottom: -.3rem;
     left: 3rem;
     transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .pimg {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .pimg {
+        grid-template-columns: 1fr;  /* 1 column on very small screens */
+    }
 }
