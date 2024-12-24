@@ -70,11 +70,11 @@ nav a:hover {
 
 main {
     background-color: #2D2D2D;
-	height: 60vh;
+	height: 80vh;
 }
 
 .mainHeight {
-	height: 100vh !important;
+	height: 70vh !important;
 }
 
 .info1 h2 {
@@ -452,3 +452,31 @@ footer p {
     margin: 0;               /* Remove default margin */
     font-size: 14px;          /* Font size for the text */
 }
+
+.footer {
+	bottom: 100px;  
+}
+
+.sub-tabs {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+		
+		.sub-tabs li {
+            padding: 10px 20px;
+        }
+
+        .sub-tabs li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .tabs li:hover .sub-tabs {
+            display: block;
+        }
